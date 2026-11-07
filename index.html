@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#3b82f6">
-  <meta name="description" content="TenseFlow - Interactive English Tense Teaching Application. Master all 12 tenses with visual timelines, formulas, quizzes, and 3D flashcards completely offline.">
+  <meta name="description" content="TenseCraft - Interactive English Tense Teaching Application. Master all 12 tenses with visual timelines, formulas, quizzes, and 3D flashcards completely offline.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="TenseFlow">
+  <meta name="apple-mobile-web-app-title" content="TenseCraft">
 
-  <title>TenseFlow — Master All 12 English Tenses</title>
+  <title>TenseCraft — Master All 12 English Tenses</title>
 
   <!-- PWA Manifest & App Icons -->
   <link rel="manifest" href="./manifest.json">
@@ -31,7 +31,7 @@
       <div class="sidebar-brand">
         <div class="brand-logo-icon">T</div>
         <div class="brand-text">
-          <h2>TenseFlow <span class="brand-badge">PRO</span></h2>
+          <h2>TenseCraft <span class="brand-badge">PRO</span></h2>
         </div>
       </div>
 
@@ -97,10 +97,12 @@
             🔥 <span>1 Day Streak</span>
           </div>
 
-          <!-- GitHub Project Link & Guide Button -->
-          <button id="github-modal-btn" class="header-icon-btn github-btn" title="GitHub Pages & Repository" aria-label="GitHub Repository & Setup">
-            <svg class="octocat-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          <!-- Deployment & Setup Guide Button -->
+          <button id="github-modal-btn" class="header-icon-btn deploy-btn" title="Publish & Web Deployment" aria-label="Web Deployment & Setup">
+            <svg class="deploy-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+              <path d="M12 12v9"/>
+              <path d="m8 16 4-4 4 4"/>
             </svg>
           </button>
 
@@ -181,27 +183,29 @@
       </a>
     </nav>
 
-    <!-- GitHub Pages Setup & Deployment Modal -->
+    <!-- Web Pages Setup & Deployment Modal -->
     <div id="github-modal" class="modal-backdrop hidden">
       <div class="modal-box animate-scaleUp">
         <div class="modal-header">
           <div class="modal-title-row">
-            <svg class="octocat-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            <svg class="deploy-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+              <path d="M12 12v9"/>
+              <path d="m8 16 4-4 4 4"/>
             </svg>
-            <h3>Publish to Your GitHub Pages</h3>
+            <h3>Publish &amp; Deploy Online</h3>
           </div>
           <button id="close-modal-btn" class="modal-close-btn">&times;</button>
         </div>
 
         <div class="modal-body">
-          <p class="modal-lead">This app is 100% static, modern JavaScript with zero dependencies and works directly on GitHub Pages!</p>
+          <p class="modal-lead">This app is 100% static, modern JavaScript with zero dependencies and works directly on GitHub Pages, Netlify, or any web host!</p>
 
           <div class="gh-step">
             <span class="step-num">1</span>
             <div class="step-desc">
-              <strong>Create a new GitHub repository:</strong>
-              <p>Go to <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a> and name it (e.g. <code>tenseflow</code> or <code>english-tenses</code>). Choose <em>Public</em>.</p>
+              <strong>Create your Git repository:</strong>
+              <p>Go to <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a> and name it (e.g. <code>tensecraft</code> or <code>english-tenses</code>). Choose <em>Public</em>.</p>
             </div>
           </div>
 

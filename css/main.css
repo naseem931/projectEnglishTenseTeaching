@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TenseFlow - Modern Offline English Tense Teaching App
+   TenseCraft - Modern Offline English Tense Teaching App
    Responsive Design (Desktop, Tablet, Mobile) with Seamless Dark/Light Themes
    ========================================================================== */
 
@@ -1840,7 +1840,7 @@ code {
   color: var(--accent-primary);
   transform: scale(1.05);
 }
-.octocat-icon {
+.deploy-icon {
   display: inline-block;
   vertical-align: middle;
 }

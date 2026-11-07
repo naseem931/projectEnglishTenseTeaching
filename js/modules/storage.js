@@ -4,12 +4,12 @@
  */
 
 const STORAGE_KEYS = {
-  THEME: "tenseflow_theme",
-  COMPLETED_LESSONS: "tenseflow_completed_lessons",
-  BOOKMARKS: "tenseflow_bookmarks",
-  QUIZ_STATS: "tenseflow_quiz_stats",
-  LAST_ACTIVE: "tenseflow_last_active_date",
-  STREAK: "tenseflow_streak"
+  THEME: "tensecraft_theme",
+  COMPLETED_LESSONS: "tensecraft_completed_lessons",
+  BOOKMARKS: "tensecraft_bookmarks",
+  QUIZ_STATS: "tensecraft_quiz_stats",
+  LAST_ACTIVE: "tensecraft_last_active_date",
+  STREAK: "tensecraft_streak"
 };
 
 export class StorageManager {

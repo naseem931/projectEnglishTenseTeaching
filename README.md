@@ -1,4 +1,4 @@
-# 🎓 TenseFlow — Modern English Tense Teaching App
+# 🎓 TenseCraft — Modern English Tense Teaching App
 
 A comprehensive, responsive, 100% offline English tense learning web application built with **Modern JavaScript (ES6+ Modules)**, **Vanilla CSS Custom Properties**, and a **Progressive Web App (PWA) Service Worker**.
 
@@ -14,7 +14,7 @@ This application is **100% static** and designed to deploy immediately to **GitH
 
 #### Step 1: Create a New GitHub Repository
 1. Visit [github.com/new](https://github.com/new).
-2. Enter a repository name (e.g., `tenseflow` or `english-tenses`).
+2. Enter a repository name (e.g., `tensecraft` or `english-tenses`).
 3. Set visibility to **Public**.
 4. Leave other options unchecked and click **Create repository**.
 
@@ -157,5 +157,8 @@ Open `http://localhost:8000` or `http://localhost:3000` in your web browser.
 
 ---
 
-## 📄 License
-MIT License. Free to use, modify, and distribute for educational purposes.
+## 📄 Commercial License & Copyright
+Copyright (c) 2026. All rights reserved.
+
+**Commercial Use Authorized:**
+You have full ownership to commercialize, monetize, license, rebrand, and distribute this application as a standalone commercial product, web platform, or SaaS service without third-party royalties.

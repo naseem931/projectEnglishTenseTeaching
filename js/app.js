@@ -48,7 +48,7 @@ class App {
 
     if (!modal) return;
 
-    const savedLink = localStorage.getItem("tenseflow_custom_gh_link");
+    const savedLink = localStorage.getItem("tensecraft_custom_gh_link");
     if (savedLink && input) {
       input.value = savedLink;
     }
@@ -81,7 +81,7 @@ class App {
           }
         }
 
-        localStorage.setItem("tenseflow_custom_gh_link", val);
+        localStorage.setItem("tensecraft_custom_gh_link", val);
         if (statusHint) {
           statusHint.classList.remove("hidden");
           setTimeout(() => statusHint.classList.add("hidden"), 3000);
