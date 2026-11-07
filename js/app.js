@@ -10,6 +10,7 @@ import { speechEngine } from "./modules/speech.js";
 import { TimelineVisualizer } from "./modules/timeline.js";
 import { QuizEngine } from "./modules/quiz.js";
 import { FlashcardEngine } from "./modules/flashcards.js";
+import { StorytellingEngine } from "./modules/storytelling.js";
 
 class App {
   constructor() {
@@ -182,6 +183,7 @@ class App {
 
     this.quizEngine = new QuizEngine("quiz-mount");
     this.flashcardEngine = new FlashcardEngine("flashcard-mount");
+    this.storyEngine = new StorytellingEngine("story-mount");
   }
 
   handleRouting() {
@@ -227,6 +229,11 @@ class App {
       case "flashcards":
         document.getElementById("flashcards-section")?.classList.remove("hidden");
         this.flashcardEngine.init();
+        break;
+
+      case "story":
+        document.getElementById("story-section")?.classList.remove("hidden");
+        this.storyEngine.init();
         break;
 
       case "matrix":

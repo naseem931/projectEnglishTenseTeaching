@@ -3,7 +3,7 @@
  * Caches all application assets for 100% offline functionality.
  */
 
-const CACHE_NAME = "tenseflow-v1.0.0";
+const CACHE_NAME = "tenseflow-v1.1.0";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -14,11 +14,13 @@ const ASSETS_TO_CACHE = [
   "./js/data/tensesData.js",
   "./js/data/quizData.js",
   "./js/data/irregularVerbs.js",
+  "./js/data/storiesData.js",
   "./js/modules/storage.js",
   "./js/modules/speech.js",
   "./js/modules/timeline.js",
   "./js/modules/quiz.js",
-  "./js/modules/flashcards.js"
+  "./js/modules/flashcards.js",
+  "./js/modules/storytelling.js"
 ];
 
 // Install: Cache critical assets

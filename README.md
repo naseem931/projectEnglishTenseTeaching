@@ -73,7 +73,17 @@ git push -u origin main
 - Back side: Complete formula breakdown and rule of thumb.
 - Keyboard support (`Space` to flip, `Left`/`Right` arrow keys to navigate).
 
-### 5. 📊 Comparison Matrix (Cheat Sheet)
+### 5. 🎙️ Study by Telling Mode (Interactive Story Studio & Voice Dictation)
+- **Interactive Storytelling**:
+  - Narrative scenarios (*The Midnight Museum Mystery*, *Mission to Mars 2045*, *A Day in Tokyo*).
+  - Practice tenses in realistic narrative flow by advancing story chapters.
+  - **Oral Voice Telling (Microphone)**: Speak answers aloud using Web Speech recognition (or tap options).
+  - Full audio narration playback of completed story chapters.
+- **Speaking Studio (Prompts)**:
+  - Structured storytelling missions requiring specific target tenses.
+  - Voice dictation and automated tense feedback.
+
+### 6. 📊 Comparison Matrix (Cheat Sheet)
 - Side-by-side comparison table of all 12 tenses grouped by Aspect (Simple, Continuous, Perfect, Perfect Continuous).
 
 ### 6. 📝 Irregular Verbs Reference
