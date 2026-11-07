@@ -1,0 +1,19 @@
+{
+  "name": "TenseFlow - Master English Tenses",
+  "short_name": "TenseFlow",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0f17",
+  "theme_color": "#3b82f6",
+  "description": "Complete offline interactive English tense teaching application with visual timeline, 3D flashcards, and quizzes.",
+  "categories": ["education", "books", "productivity"],
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
