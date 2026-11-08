@@ -27,68 +27,12 @@ class App {
   init() {
     this.initTheme();
     this.initNavigation();
-    this.initGitHubModal();
     this.initSubEngines();
     this.initPWA();
     this.renderStreak();
     this.handleRouting();
 
     window.addEventListener("hashchange", () => this.handleRouting());
-  }
-
-  /* ------------------- GitHub Modal & Deployment ------------------- */
-  initGitHubModal() {
-    const modalBtn = document.getElementById("github-modal-btn");
-    const modal = document.getElementById("github-modal");
-    const closeBtn = document.getElementById("close-modal-btn");
-    const doneBtn = document.getElementById("modal-done-btn");
-    const input = document.getElementById("gh-user-repo-input");
-    const saveBtn = document.getElementById("save-gh-link-btn");
-    const statusHint = document.getElementById("gh-saved-status");
-
-    if (!modal) return;
-
-    const savedLink = localStorage.getItem("tensecraft_custom_gh_link");
-    if (savedLink && input) {
-      input.value = savedLink;
-    }
-
-    const openModal = () => modal.classList.remove("hidden");
-    const closeModal = () => modal.classList.add("hidden");
-
-    if (modalBtn) modalBtn.addEventListener("click", openModal);
-    if (closeBtn) closeBtn.addEventListener("click", closeModal);
-    if (doneBtn) doneBtn.addEventListener("click", closeModal);
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
-
-    if (saveBtn && input) {
-      saveBtn.addEventListener("click", () => {
-        let val = input.value.trim();
-        if (!val) return;
-
-        // Auto format to full URL if user just enters "username/repo"
-        if (!val.startsWith("http://") && !val.startsWith("https://")) {
-          if (val.includes(".github.io")) {
-            val = `https://${val}`;
-          } else if (val.includes("/")) {
-            const [username, repo] = val.split("/");
-            val = `https://${username}.github.io/${repo}/`;
-          } else {
-            val = `https://github.com/${val}`;
-          }
-        }
-
-        localStorage.setItem("tensecraft_custom_gh_link", val);
-        if (statusHint) {
-          statusHint.classList.remove("hidden");
-          setTimeout(() => statusHint.classList.add("hidden"), 3000);
-        }
-        window.open(val, "_blank");
-      });
-    }
   }
 
   /* ------------------- Theme Management ------------------- */

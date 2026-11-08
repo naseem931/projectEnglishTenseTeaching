@@ -6,42 +6,6 @@ Designed for **Desktop, Tablet, and Mobile** with seamless **Dark & Light Mode**
 
 ---
 
-## 🚀 Live Demo & GitHub Pages Deployment
-
-This application is **100% static** and designed to deploy immediately to **GitHub Pages** with zero build configuration!
-
-### How to Publish to Your GitHub Pages:
-
-#### Step 1: Create a New GitHub Repository
-1. Visit [github.com/new](https://github.com/new).
-2. Enter a repository name (e.g., `tensecraft` or `english-tenses`).
-3. Set visibility to **Public**.
-4. Leave other options unchecked and click **Create repository**.
-
-#### Step 2: Push Your Code
-Open PowerShell or your terminal inside this folder (`english-teach`) and run:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git branch -M main
-git push -u origin main
-```
-*(Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` with your actual GitHub account and repository name)*
-
-#### Step 3: Enable GitHub Pages
-1. On your GitHub repository page, go to **Settings** &rarr; **Pages** (in the left sidebar).
-2. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`
-   - **Branch**: Select `main` and folder `/ (root)`
-   - Click **Save**.
-3. Alternatively, you can select **GitHub Actions** as source — a pre-configured `.github/workflows/deploy.yml` is already included in this repository!
-4. Within 1–2 minutes, your live site will be ready at:
-   ```text
-   https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/
-   ```
-
----
-
 ## 🌟 Key Features
 
 ### 1. 📖 Complete 12 English Tenses Coverage
@@ -112,9 +76,6 @@ git push -u origin main
 
 ```text
 english-teach/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml        # Automated GitHub Pages CI/CD workflow
 ├── css/
 │   └── main.css              # Custom properties, responsive styles & animations
 ├── icons/
@@ -123,19 +84,21 @@ english-teach/
 │   ├── data/
 │   │   ├── tensesData.js     # Comprehensive dataset for all 12 tenses
 │   │   ├── quizData.js       # Interactive quiz question pool & explanations
-│   │   └── irregularVerbs.js # 98+ irregular verb conjugations
+│   │   ├── irregularVerbs.js # 98+ irregular verb conjugations
+│   │   └── storiesData.js    # Interactive narrative stories & prompts
 │   ├── modules/
 │   │   ├── storage.js        # LocalStorage (theme, streak, scores, bookmarks)
 │   │   ├── speech.js         # Offline Web Speech API TTS engine
 │   │   ├── timeline.js       # SVG interactive tense continuum visualizer
 │   │   ├── quiz.js           # Quiz engine with audio synthesis feedback
-│   │   └── flashcards.js     # 3D interactive flashcards
+│   │   ├── flashcards.js     # 3D interactive flashcards
+│   │   └── storytelling.js   # Story studio & oral voice challenge engine
 │   └── app.js                # App router, theme switcher & state controller
 ├── .gitignore
-├── .nojekyll                 # Ensures GitHub Pages serves modern ES modules
 ├── index.html                # Semantic HTML5 single-page application
 ├── manifest.json             # PWA Web App Manifest
 ├── README.md                 # Documentation and setup guide
+├── server.js                 # Local Node.js development server
 └── sw.js                     # Offline Service Worker cache
 ```
 

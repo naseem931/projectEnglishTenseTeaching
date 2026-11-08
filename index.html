@@ -97,15 +97,6 @@
             🔥 <span>1 Day Streak</span>
           </div>
 
-          <!-- Deployment & Setup Guide Button -->
-          <button id="github-modal-btn" class="header-icon-btn deploy-btn" title="Publish & Web Deployment" aria-label="Web Deployment & Setup">
-            <svg class="deploy-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
-              <path d="M12 12v9"/>
-              <path d="m8 16 4-4 4 4"/>
-            </svg>
-          </button>
-
           <!-- Theme Switcher (Dark / Light) -->
           <button class="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
             <span class="theme-icon">🌙</span>
@@ -182,78 +173,6 @@
         <span>Matrix</span>
       </a>
     </nav>
-
-    <!-- Web Pages Setup & Deployment Modal -->
-    <div id="github-modal" class="modal-backdrop hidden">
-      <div class="modal-box animate-scaleUp">
-        <div class="modal-header">
-          <div class="modal-title-row">
-            <svg class="deploy-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
-              <path d="M12 12v9"/>
-              <path d="m8 16 4-4 4 4"/>
-            </svg>
-            <h3>Publish &amp; Deploy Online</h3>
-          </div>
-          <button id="close-modal-btn" class="modal-close-btn">&times;</button>
-        </div>
-
-        <div class="modal-body">
-          <p class="modal-lead">This app is 100% static, modern JavaScript with zero dependencies and works directly on GitHub Pages, Netlify, or any web host!</p>
-
-          <div class="gh-step">
-            <span class="step-num">1</span>
-            <div class="step-desc">
-              <strong>Create your Git repository:</strong>
-              <p>Go to <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a> and name it (e.g. <code>tensecraft</code> or <code>english-tenses</code>). Choose <em>Public</em>.</p>
-            </div>
-          </div>
-
-          <div class="gh-step">
-            <span class="step-num">2</span>
-            <div class="step-desc">
-              <strong>Connect and push your code:</strong>
-              <p>Run these commands in this directory in PowerShell or Terminal:</p>
-              <div class="code-block-container">
-                <pre><code>git init
-git add .
-git commit -m "Initial commit of English Tenses App"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main</code></pre>
-              </div>
-            </div>
-          </div>
-
-          <div class="gh-step">
-            <span class="step-num">3</span>
-            <div class="step-desc">
-              <strong>Enable GitHub Pages in Repo Settings:</strong>
-              <p>Go to <strong>Settings</strong> &rarr; <strong>Pages</strong> in your GitHub repository:</p>
-              <ul>
-                <li><strong>Source:</strong> Select <em>Deploy from a branch</em></li>
-                <li><strong>Branch:</strong> Select <code>main</code> and folder <code>/ (root)</code></li>
-                <li>Click <strong>Save</strong></li>
-              </ul>
-              <p class="gh-live-url">Your app will be live at: <code>https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/</code></p>
-            </div>
-          </div>
-
-          <div class="gh-custom-link-box">
-            <label for="gh-user-repo-input"><strong>Set your live GitHub Pages link:</strong></label>
-            <div class="input-with-button">
-              <input type="text" id="gh-user-repo-input" placeholder="e.g. username/repo-name or full URL" />
-              <button id="save-gh-link-btn" class="btn btn-primary btn-sm">Save &amp; Open</button>
-            </div>
-            <div id="gh-saved-status" class="saved-hint hidden">Link saved to your browser!</div>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button id="modal-done-btn" class="btn btn-secondary">Close</button>
-        </div>
-      </div>
-    </div>
 
   </div>
 

@@ -3,7 +3,7 @@
  * Caches all application assets for 100% offline functionality.
  */
 
-const CACHE_NAME = "tensecraft-v2.0.0";
+const CACHE_NAME = "tensecraft-v2.1.0";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
