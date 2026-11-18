@@ -120,8 +120,5 @@ Open `http://localhost:8000` or `http://localhost:3000` in your web browser.
 
 ---
 
-## 📄 Commercial License & Copyright
-Copyright (c) 2026. All rights reserved.
-
-**Commercial Use Authorized:**
-You have full ownership to commercialize, monetize, license, rebrand, and distribute this application as a standalone commercial product, web platform, or SaaS service without third-party royalties.
+## 📄 License
+This project is licensed under the terms of the [MIT License](LICENSE).
