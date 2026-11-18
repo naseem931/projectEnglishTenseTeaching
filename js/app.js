@@ -773,10 +773,6 @@ class App {
       <div class="legal-wrapper animate-fadeIn">
         <div class="legal-top-bar">
           <a href="#learn" class="back-link">&larr; Back to Academy</a>
-          <div class="legal-tab-switch">
-            <a href="#terms" class="legal-tab-btn active">Terms &amp; Conditions</a>
-            <a href="#privacy" class="legal-tab-btn">Privacy Policy</a>
-          </div>
         </div>
 
         <div class="legal-card">
@@ -855,10 +851,6 @@ class App {
       <div class="legal-wrapper animate-fadeIn">
         <div class="legal-top-bar">
           <a href="#learn" class="back-link">&larr; Back to Academy</a>
-          <div class="legal-tab-switch">
-            <a href="#terms" class="legal-tab-btn">Terms &amp; Conditions</a>
-            <a href="#privacy" class="legal-tab-btn active">Privacy Policy</a>
-          </div>
         </div>
 
         <div class="legal-card">
