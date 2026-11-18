@@ -190,6 +190,16 @@ class App {
         this.renderVerbsView();
         break;
 
+      case "terms":
+        document.getElementById("terms-section")?.classList.remove("hidden");
+        this.renderTermsView();
+        break;
+
+      case "privacy":
+        document.getElementById("privacy-section")?.classList.remove("hidden");
+        this.renderPrivacyView();
+        break;
+
       default:
         document.getElementById("learn-section")?.classList.remove("hidden");
         this.renderLearnView();
@@ -752,6 +762,179 @@ class App {
         });
       });
     });
+  }
+
+  /* ------------------- Legal: Terms & Privacy Views ------------------- */
+  renderTermsView() {
+    const container = document.getElementById("terms-section");
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="legal-wrapper animate-fadeIn">
+        <div class="legal-top-bar">
+          <a href="#learn" class="back-link">&larr; Back to Academy</a>
+          <div class="legal-tab-switch">
+            <a href="#terms" class="legal-tab-btn active">Terms &amp; Conditions</a>
+            <a href="#privacy" class="legal-tab-btn">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <header class="legal-header">
+            <span class="badge badge-legal">Official Terms</span>
+            <h1>Terms and Conditions of Use</h1>
+            <p class="legal-updated">Last Updated: November 2026 • Effective Immediately</p>
+          </header>
+
+          <div class="legal-highlight-box">
+            <strong>📋 Plain-English Summary:</strong>
+            <p>TenseCraft is a modern, 100% offline educational web application. You are free to use it for personal study, teaching, and classroom instruction. Your progress stays on your device. All educational content is provided "as is" to help you master English tenses.</p>
+          </div>
+
+          <div class="legal-content-body">
+            <section class="legal-clause">
+              <h3>1. Acceptance of Terms</h3>
+              <p>By accessing, installing, browsing, or utilizing the TenseCraft application (the "Application" or "Service"), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms and Conditions. If you do not agree to these terms, please discontinue using the Application.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>2. Permitted Use &amp; Educational Purpose</h3>
+              <p>TenseCraft is developed strictly for educational, instructional, self-improvement, and language reference purposes. You may use the Application on any compatible device (desktop, tablet, mobile) for individual self-study, classroom instruction, tutoring, and curriculum practice.</p>
+              <ul>
+                <li>You may not attempt to reverse engineer or intentionally disrupt the local client-side software.</li>
+                <li>You may not misrepresent your affiliation with the creators of TenseCraft.</li>
+              </ul>
+            </section>
+
+            <section class="legal-clause">
+              <h3>3. Intellectual Property Rights</h3>
+              <p>All curriculum design, grammar formulas, exercises, explanations, SVG continuum diagrams, interactive timelines, user interface components, and source code are the proprietary intellectual property of TenseCraft and its contributors. All rights not expressly granted herein are reserved.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>4. Local Data &amp; Offline Availability</h3>
+              <p>TenseCraft functions as an offline-first Progressive Web Application (PWA). All learning data—including completed lessons, bookmarks, quiz scores, streaks, and dark/light mode preferences—is stored exclusively on your device via standard HTML5 <code>localStorage</code>.</p>
+              <p>Because no data is hosted on remote central servers, you are solely responsible for safeguarding your browser data and cache.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>5. Voice Recognition &amp; Speech APIs</h3>
+              <p>The optional voice dictation and text-to-speech audio features rely upon native browser APIs (such as the standard Web Speech API). Microphone access is requested strictly when you initiate an oral study challenge and is processed on-device. No audio recordings are transmitted or stored remotely.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>6. Disclaimer of Warranties</h3>
+              <p>THE APPLICATION AND ALL GRAMMATICAL CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. While we endeavor to provide linguistically accurate pedagogical content, we do not warrant that the application will be uninterrupted, error-free, or guarantee specific academic or examination outcomes.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>7. Limitation of Liability</h3>
+              <p>TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPERS, AUTHORS, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THIS APPLICATION.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>8. Modifications to Terms</h3>
+              <p>We reserve the right to revise or update these Terms and Conditions at any time. Any changes will be reflected directly on this page with an updated revision date. Continued use of the Application signifies your acceptance of any revised terms.</p>
+            </section>
+          </div>
+
+          <footer class="legal-card-footer">
+            <a href="#privacy" class="btn btn-secondary">Read Privacy Policy &rarr;</a>
+            <a href="#learn" class="btn btn-primary">Start Learning Tenses &rarr;</a>
+          </footer>
+        </div>
+      </div>
+    `;
+  }
+
+  renderPrivacyView() {
+    const container = document.getElementById("privacy-section");
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="legal-wrapper animate-fadeIn">
+        <div class="legal-top-bar">
+          <a href="#learn" class="back-link">&larr; Back to Academy</a>
+          <div class="legal-tab-switch">
+            <a href="#terms" class="legal-tab-btn">Terms &amp; Conditions</a>
+            <a href="#privacy" class="legal-tab-btn active">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="legal-card">
+          <header class="legal-header">
+            <span class="badge badge-privacy">100% Privacy First</span>
+            <h1>Privacy Policy</h1>
+            <p class="legal-updated">Last Updated: November 2026 • Client-Side Confidentiality</p>
+          </header>
+
+          <div class="legal-highlight-box privacy-box">
+            <strong>🛡️ Zero Personal Data Collection:</strong>
+            <p>Your privacy is absolute. TenseCraft does not collect, transmit, store, sell, or share any personal information. The app runs 100% locally in your browser with zero remote trackers and zero ads.</p>
+          </div>
+
+          <div class="legal-content-body">
+            <section class="legal-clause">
+              <h3>1. Our Privacy Principle</h3>
+              <p>We believe learning tools should respect your personal digital space. TenseCraft is architected as a serverless, client-side progressive web app. No account registration, email address, password, or credit card is ever required.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>2. Information We Do NOT Collect</h3>
+              <ul>
+                <li><strong>No Personal Identifiers:</strong> We do not collect names, email addresses, phone numbers, or IP addresses.</li>
+                <li><strong>No Analytics or Tracking:</strong> We do not embed Google Analytics, Mixpanel, Facebook Pixel, or tracking telemetry.</li>
+                <li><strong>No Advertising Cookies:</strong> We do not serve third-party ads or engage in behavioral profiling.</li>
+              </ul>
+            </section>
+
+            <section class="legal-clause">
+              <h3>3. Local Device Storage (LocalStorage)</h3>
+              <p>TenseCraft stores your learning progress exclusively inside your browser's local sandbox using the <code>localStorage</code> API. Stored parameters include:</p>
+              <ul>
+                <li>Completed tense lessons list</li>
+                <li>Bookmarked tenses</li>
+                <li>Quiz statistics (questions attempted, correct count, streak record)</li>
+                <li>User interface theme preference (Dark Mode / Light Mode)</li>
+                <li>Last active study date (for daily streak calculation)</li>
+              </ul>
+              <p>This information never leaves your device and is never synchronized to any external server.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>4. Microphone &amp; Audio Privacy</h3>
+              <p>The optional <em>Study by Telling</em> feature includes voice dictation to let you practice speaking English sentences aloud:</p>
+              <ul>
+                <li>Microphone access is only requested when you explicitly tap the microphone button.</li>
+                <li>Voice recognition is performed natively by your browser's Web Speech API.</li>
+                <li>We do <strong>not</strong> record, upload, retain, or transmit your voice or audio clips to any server.</li>
+                <li>You can revoke microphone permissions at any time via your browser settings.</li>
+              </ul>
+            </section>
+
+            <section class="legal-clause">
+              <h3>5. Offline Service Worker &amp; Cache</h3>
+              <p>The Application uses a standard Service Worker (<code>sw.js</code>) to cache static files (HTML, CSS, JavaScript, and SVG icons) locally. This cache allows TenseCraft to load instantly and run seamlessly without an active internet connection.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>6. Children's Privacy (COPPA &amp; GDPR)</h3>
+              <p>Because TenseCraft does not collect any personal data from any user, it fully complies with the Children's Online Privacy Protection Act (COPPA) in the United States and the General Data Protection Regulation (GDPR) in the European Union. It is safe for children, classrooms, and students of all age groups.</p>
+            </section>
+
+            <section class="legal-clause">
+              <h3>7. How to Clear or Reset Your Data</h3>
+              <p>You have full ownership of your data at all times. To delete all progress, simply clear your browser's site data or cookies for this domain, or inspect storage and clear LocalStorage.</p>
+            </section>
+          </div>
+
+          <footer class="legal-card-footer">
+            <a href="#terms" class="btn btn-secondary">&larr; Read Terms &amp; Conditions</a>
+            <a href="#learn" class="btn btn-primary">Start Learning Tenses &rarr;</a>
+          </footer>
+        </div>
+      </div>
+    `;
   }
 }
 
